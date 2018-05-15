@@ -113,7 +113,7 @@ header {
 #adminbutton {
     display:						inline-block;
     cursor:							pointer;
-    float:							left;
+    /*float:							left;*/
 	background-color:				#e7e7e7;
 	color:							black;
 	border:							1px solid black;
