@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	require 'db.php';
 	$user = mysqli_real_escape_string($conn, $_POST['user']);
 	$pass = mysqli_real_escape_string($conn, $_POST['pass']);
@@ -21,9 +20,14 @@
 		$joined = mysqli_query($conn, $a);
 		header("Location:index.php");
 	}
-	else echo	"User:	" . $_POST['user'] . "<br>" . 
+	else {
+		header("Location:index.php");
+		exit;
+	}
+/*		echo	"User:	" . $_POST['user'] . "<br>" . 
 				"Pass:	" . $_POST['pass'] . "<br>" . 
 				"User:	" . $user . "<br>" . 
 				"Pass:	" . $pass . "<br>" . 
 				$a;
+*/
 ?>
