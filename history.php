@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	require 'db.php';
 	$idChat = $_SESSION['idLastChat'];
 	$a = "select c.idChat as id, c.time as time, u.username as username, c.value as chat, c.type as type

@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	require 'db.php';
 	$chat = $_GET['chat'];
 	$idUser = $_SESSION['idUser'];

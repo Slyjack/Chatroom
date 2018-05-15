@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	require 'db.php';
 	$idUser = $_SESSION['idUser'];
 	$a = "update users set Online = '0' where idUsers = '$idUser'";
